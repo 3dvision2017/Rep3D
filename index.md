@@ -34,7 +34,7 @@ Syntax highlighted code block
 
 ```
 
-![Pipeline](Rep3D/pipeline_1.jpg)
+![Pipeline](Rep3D/pipeline_1.png)
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
