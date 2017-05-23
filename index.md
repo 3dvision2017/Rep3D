@@ -5,8 +5,8 @@ Applications like scene modeling, autonomous navigation and virtual tourism make
 
 There are four main problems to be solved of which the first two are already solved by previous work: 
 
-1. Obtain a 3D reconstruction (we use [COLMAP](https://colmap.github.io/))
-2. Find repetitions on 2D images (we use [REP](http://ccwu.me/code.html))
+1. Obtain a 3D reconstruction (we use [COLMAP](https://colmap.github.io/) by Johannes Schönberger)
+2. Find repetitions on 2D images (we use [Single View Repetition Detection](http://ccwu.me/code.html) by Changchang Wu)
 3. Find 3D projection planes  (our contribution)
 4. Project repetitions from 2D to 3D (our contribution)
 5. Find optimal repetition representation in point cloud (our contribution)
