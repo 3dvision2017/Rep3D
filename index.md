@@ -1,8 +1,5 @@
-## Welcome to GitHub Pages
-
-You can use the [editor on GitHub](https://github.com/lfrschkn/Rep3D/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Introduction
+Applications like scene modeling, autonomous navigation and virtual tourism make use of sparse point clouds obtained via Structure-from-Motion. Often these applications require new images to be localized within the preceding point cloud. In the presence of repetitive structures (e.g. windows, cladding, panels) this task becomes very difficult, since the localization might be ambiguous. Augmenting the point cloud with information on repetitive structures has two potential benefits. First the information could be used to rectify and pack the sparse point cloud. Second knowing more about the appearance of repetitions in the point cloud might help subsequent localization steps to improve their performance.
 
 ### Markdown
 
