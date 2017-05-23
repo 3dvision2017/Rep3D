@@ -13,7 +13,7 @@ There are four main problems to be solved of which the first two are already sol
 
 To find the projection planes for point 3 and 4 we use corresponding features that lie within the repetitions in 2D and use RANSAC to fit the plane model. We then project every 2D repetition onto its corresponding plane in 3D, found before. This results in multiple overlapping repetitions in 3D. Then we use a Hough transform in combination with the DBSCAN algorithm to find the main planes (these correspond to the facades of the building). We then project the repetitions onto their corresponding facades. As a final step we cluster the repetitions on their main plane and find one optimal representation for each cluster. This is done by comparing overlap, cell width and height, corner closeness and the amount of columns and rows of a repetition scheme.
 
-As a study case we use an image dataset of the CAB building at ETH Zurich, provided by our supervisor.
+As a study case we use an image dataset of the CAB building at ETH Zurich.
 
 ```markdown
 Syntax highlighted code block
