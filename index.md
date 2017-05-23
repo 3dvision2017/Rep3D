@@ -31,8 +31,10 @@ Syntax highlighted code block
 **Bold** and _Italic_ and `Code` text
 
 [Link](url) and 
-![Image](Rep3D/pipeline1.svg)
+
 ```
+
+![Pipeline](Rep3D/pipeline1.svg)
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
