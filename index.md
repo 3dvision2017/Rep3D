@@ -1,5 +1,5 @@
 # About
-This project was conducted within the scope of the 3D Vision course at [ETHZ](www.ethz.ch), offered by the [CVG](http://www.cvg.ethz.ch/) Group.
+This project was conducted within the scope of the 3D Vision course at [ETHZ](http://www.ethz.ch), offered by the [CVG](http://www.cvg.ethz.ch/) Group.
 It is a collaboration between [pascalenderli](https://github.com/pascalenderli), [lfrschkn](https://github.com/lfrschkn), [tmarv](https://github.com/tmarv)
 
 # Motivation
