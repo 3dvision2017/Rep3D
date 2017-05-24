@@ -1,4 +1,8 @@
-# Introduction
+# About
+This project was conducted within the scope of the 3D Vision course at [ETHZ](www.ethz.ch), offered by the [CVG](http://www.cvg.ethz.ch/) Group.
+It is a collaboration between [pascalenderli](https://github.com/pascalenderli), [lfrschkn](https://github.com/lfrschkn), [tmarv](https://github.com/tmarv)
+
+# Motivation
 Applications like scene modeling, autonomous navigation and virtual tourism make use of sparse point clouds obtained via Structure-from-Motion. Often these applications require new images to be localized within the preceding point cloud. In the presence of repetitive structures (e.g. windows, cladding, panels) this task becomes very difficult, since the localization might be ambiguous. Augmenting the point cloud with information on repetitive structures has two potential benefits. First the information could be used to rectify and pack the sparse point cloud. Second knowing more about the appearance of repetitions in the point cloud might help subsequent localization steps to improve their performance.
 
 # Problem Definition and Technical Details
