@@ -22,3 +22,10 @@ As a study case we use an image dataset of the CAB building at ETH Zurich.
 # Pipeline
 
 ![Pipeline](pipeline_1.png)
+
+# Results and Discussion
+
+Figure 1 shows the full reconstruction with the repetitions found using our pipeline. The resulting repetitions clearly fit to the repetitions, in figure 2 the repetitive pattern can even be clearly seen within the point cloud. Our Algorithm generally finds the biggest repetition scheme. As can be seen in figure 3, the windows are found without their sub divisions are found. Still this highly depends on the 2D repetitions found before, using the REP4 tool. As can be seen in figure 1  also smaller patterns are found at other locations.
+It is further important to note that we use different parameters to tweak the criteria we use to determine an optimal representation. Our main trade off is between trusting given repetition schemes and complementing missing parts. These parameters would have to be adjusted for a different building.
+Concerning performance the Rep3D algorithm took about 1 minute processing time with a sparse point cloud and 312 REP4 preprocessed images as input. The performance bottleneck is clearly the REP4 preprocessing which took about 6 hours for 312 images.
+![Results](results.png)
