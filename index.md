@@ -10,7 +10,7 @@ Applications like scene modeling, autonomous navigation and virtual tourism make
 There are four main problems to be solved of which the first two are already solved by previous work: 
 
 1. Obtain a 3D reconstruction (we use [COLMAP](https://colmap.github.io/) by Johannes Schönberger)
-2. Find repetitions on 2D images (we use [Single View Repetition Detection](http://ccwu.me/code.html) by Changchang Wu, proposed in ["Detecting large repetitive structures with salient boundaries"](https://link.springer.com/chapter/10.1007/978-3-642-15552-9_11))
+2. Find repetitions on 2D images (we use [Single View Repetition Detection](http://ccwu.me/code.html) by Changchang Wu, ...proposed in ["Detecting large repetitive structures with salient boundaries"](https://link.springer.com/chapter/10.1007/978-3-642-15552-9_11))
 3. Find 3D projection planes  (our contribution)
 4. Project repetitions from 2D to 3D (our contribution)
 5. Find optimal repetition representation in point cloud (our contribution)
