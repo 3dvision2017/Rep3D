@@ -11,7 +11,7 @@ There are four main problems to be solved of which the first two are already sol
 
 1. Obtain a 3D reconstruction (we use [COLMAP](https://colmap.github.io/) by Johannes Schönberger)
 2. Find repetitions on 2D images (we use [Single View Repetition Detection](http://ccwu.me/code.html) by Changchang Wu, 
-   proposed in ["Detecting large repetitive structures with salient boundaries"](https://link.springer.com/chapter/10.1007/978-3-642-15552-9_11))
+   proposed in ["Detecting large repetitive structures with salient boundaries"](https://link.springer.com/chapter/10.1007/978-3-642-15552-9_11) and called the tool REP)
 3. Find 3D projection planes  (our contribution)
 4. Project repetitions from 2D to 3D (our contribution)
 5. Find optimal repetition representation in point cloud (our contribution)
@@ -26,9 +26,9 @@ As a study case we use an image dataset of the CAB building at ETH Zurich.
 
 # Results and Discussion
 
-Figure 1 shows the full reconstruction with the repetitions found using our pipeline. The resulting repetitions clearly fit to the repetitions, in figure 2 the repetitive pattern can even be clearly seen within the point cloud. Our Algorithm generally finds the biggest repetition scheme. As can be seen in figure 3, the windows are found without their sub divisions are found. Still this highly depends on the 2D repetitions found before, using the REP4 tool. As can be seen in figure 1  also smaller patterns are found at other locations.
+Figure 1 shows the full reconstruction with the repetitions found using our pipeline. The resulting repetitions clearly fit to the repetitions, in figure 2 the repetitive pattern can even be clearly seen within the point cloud. Our Algorithm generally finds the biggest repetition scheme. As can be seen in figure 3, the windows are found without their sub divisions are found. Still this highly depends on the 2D repetitions found before, using the REP tool. As can be seen in figure 1  also smaller patterns are found at other locations.
 It is further important to note that we use different parameters to tweak the criteria we use to determine an optimal representation. Our main trade off is between trusting given repetition schemes and complementing missing parts. These parameters would have to be adjusted for a different building.
-Concerning performance the Rep3D algorithm took about 1 minute processing time with a sparse point cloud and 312 REP4 preprocessed images as input. The performance bottleneck is clearly the REP4 preprocessing which took about 6 hours for 312 images.
+Concerning performance the Rep3D algorithm took about 1 minute processing time with a sparse point cloud and 312 REP preprocessed images as input. The performance bottleneck is clearly the REP preprocessing which took about 6 hours for 312 images.
 
 
 ![Results](results.png)
@@ -37,6 +37,6 @@ Concerning performance the Rep3D algorithm took about 1 minute processing time w
 
 Our pipeline robustly projects found repetitions into 3D it rejects outliers and noise and only accepts valid repetitions. As proposed we were able to successfully integrate the existing tools and use their output to augment the point cloud with information on repeated structures.
 
-Concerning further work we suggest to improve the REP4 tool both, in speed and in image handling because its output depends on the camera rotation which leads to problems in detecting and fusing related repetitions. 
+Concerning further work we suggest to improve the REP tool both, in speed and in image handling because its output depends on the camera rotation which leads to problems in detecting and fusing related repetitions. 
 Further work could also be done by trying to densify the point cloud. Since the repetitions cells are now available one could copy the points included in one cell to neighboring cells.
 
