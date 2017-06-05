@@ -40,8 +40,8 @@ int main(int argc, char** argv)
 
 
   data_rep3d.writeRawProjRepsToCSV("finalReps.csv");
-  data_rep3d.writeCloudToCSV();
-  data_rep3d.writeClustersToCSV();
+  data_rep3d.writeCloudToCSV("pointCloud.csv");
+  data_rep3d.writeClustersToCSV("repClusters.csv");
 
   data_rep3d.show_plot();
 
