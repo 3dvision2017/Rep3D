@@ -26,7 +26,10 @@ From [Single View Repetition Detection](http://ccwu.me/code.html) you need:
 for each picture XYZ the following two files	
 * PXYZ.rep
 * PXYZ.rep2
-	 
+	
+	
+Example, running the code from installation folder:
+	main.cpp 
 using the example main.cpp you can pass the path to the above files in the following order:
 	path2cameras.txt path2images.txt path2points3d.txt path2folderContainingRepFiles
 
