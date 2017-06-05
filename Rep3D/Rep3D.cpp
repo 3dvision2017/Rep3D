@@ -2055,10 +2055,10 @@ void Rep3D::writeRepLinesToVRML(string filename)
 /*
   write 3D cloud points to a csv file
  */
-void Rep3D::writeCloudToCSV() {
+void Rep3D::writeCloudToCSV(string filename) {
 
 	ofstream cloudFile;
-	cloudFile.open ("../data/processed/pointCloud.csv");
+	cloudFile.open (filename);
 	//header
 	cloudFile << "ID" <<","<<"X"<<","<<"Y"<<","<<"Z"<<"\n";
 
@@ -2075,10 +2075,10 @@ void Rep3D::writeCloudToCSV() {
 /*
   writes found clusters to csv file
  */
-void Rep3D::writeClustersToCSV() {
+void Rep3D::writeClustersToCSV(string filename) {
 
 	ofstream clusterFile;
-	clusterFile.open("../data/processed/repClusters.csv");
+	clusterFile.open(filename);
 	//header
 	clusterFile << "ClusterID" << "," << "X" << "," << "Y" << "," << "Z" << "\n";
 
