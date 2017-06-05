@@ -6,9 +6,28 @@ About
 Detection of repeated structures in SfM.
 Find further details on https://3dvision2017.github.io/Rep3D/
 
-Getting Started
+I/O
 ---------------
+Input:
+From [COLMAP]{} you need:
+	- cameras.txt
+	- images.txt
+	- points3D.txt
 
+From [REP]{} you need:
+	for each picture XYZ the following two files	
+	- PXYZ.rep
+	- PXYZ.rep2
+	 
+using the example main.cpp you can pass the path to the above files in the following order:
+	path2cameras.txt path2images.txt path2points3d.txt path2folderContainingRepFiles
+
+Output:
+Checkout the example main.cpp, you can save the point cloud and the projected repetitions in VRML and CSV format wiht the following functions:
+	- print_VRML(path2saveFile)
+	- writeRawProjRepsToCSV(path2saveFile)
+	- writeCloudToCSV(path2saveFile)
+	- writeClustersToCSV(path2saveFile)
 
 Documentation
 -------------
