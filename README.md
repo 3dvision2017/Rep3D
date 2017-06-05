@@ -18,9 +18,9 @@ I/O
 ---------------
 Input:
 From [COLMAP](https://colmap.github.io/) you need:
-	* cameras.txt
-	* images.txt
-	* points3D.txt
+* cameras.txt
+* images.txt
+* points3D.txt
 
 From [Single View Repetition Detection](http://ccwu.me/code.html) you need:
 	for each picture XYZ the following two files	
