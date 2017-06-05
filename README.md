@@ -10,10 +10,6 @@ Dependencies
 ---------------
 boost, Eigen3, c++11
 
-Installation
----------------
-Use provided Makefile
-
 I/O
 ---------------
 Input:
@@ -39,6 +35,15 @@ Checkout the example main.cpp, you can save the point cloud and the projected re
 * writeRawProjRepsToCSV(path2saveFile)
 * writeCloudToCSV(path2saveFile)
 * writeClustersToCSV(path2saveFile)
+
+Set Up
+---------------
+Example:
+1) clone to folder
+2) unzip test data
+3) make
+4) run it with: 
+	./main test_data/CAB_ETH/colmap/cameras.txt test_data/CAB_ETH/colmap/images.txt test_data/CAB_ETH/colmap/points3D.txt 			test_data/CAB_ETH/rep
 
 Visualisation
 ---------------
