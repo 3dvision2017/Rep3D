@@ -14,24 +14,24 @@ from random import randint
 ## main parameters
 # point cloud
 plotCloud = True
-cloudFile="../data/processed/pointCloud.csv"
+cloudFile="pointCloud.csv"
 # clusters
 plotClusters = False
-clustersFile="../data/processed/repClusters.csv"
+clustersFile="repClusters.csv"
 
 
 
 # repetition before hough transform
 plotRawReps = False
-rawReps="../data/processed/rawProjReps.csv"
+rawReps="rawProjReps.csv"
 
 # repetitions after hough transform
 plotFilteredReps = False
-repsonFacades="../data/processed/repsonfacades.csv"
+repsonFacades="repsonfacades.csv"
 
 # final repetitions after optimizing
 plotFinalRep = True
-finalReps="../data/processed/finalReps.csv"
+finalReps="finalReps.csv"
 
 # set which repetitions to use (file is plotted)
 file = finalReps;
@@ -178,7 +178,6 @@ axis = visuals.XYZAxis(parent=view.scene)
 # execute
 if __name__ == '__main__' and sys.flags.interactive == 0:
     canvas.app.run()
-
 
 
 
