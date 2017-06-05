@@ -1,6 +1,6 @@
 /**
     main.cpp
-    Purpose: example main function
+    Purpose: EXAMPLE main function
     used this to obtain results in report
 
     @authors Pascal Enderli, Lukas Frischknecht, Timothy Marvel
