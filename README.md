@@ -9,12 +9,12 @@ Find further details on https://3dvision2017.github.io/Rep3D/
 I/O
 ---------------
 Input:
-From [COLMAP]{} you need:
+From [COLMAP](https://colmap.github.io/) you need:
 	- cameras.txt
 	- images.txt
 	- points3D.txt
 
-From [REP]{} you need:
+From [Single View Repetition Detection](http://ccwu.me/code.html) you need:
 	for each picture XYZ the following two files	
 	- PXYZ.rep
 	- PXYZ.rep2
@@ -29,12 +29,9 @@ Checkout the example main.cpp, you can save the point cloud and the projected re
 	- writeCloudToCSV(path2saveFile)
 	- writeClustersToCSV(path2saveFile)
 
-Documentation
--------------
-
-
-Acknowledgments
+Visualisation
 ---------------
+You can use the vis.py file to visualise the processed data. You will need the [VisPy](http://vispy.org/) and [numpy](http://www.numpy.org/) package. The vis.py file is just an example of how to visualise the data.
 
 
 License
@@ -44,7 +41,8 @@ The software is licensed under the GNU General Public License v3 or later. If
 you are interested in licensing the software for commercial purposes, without
 disclosing your modifications, please contact the authors.
 
-
+    Rep3D
+    Copyright (C) 2017  Pascal Enderli, Lukas Frischcknecht, Timothy Marvel
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
