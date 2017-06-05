@@ -3,7 +3,8 @@ Rep3D
 
 About
 -----
-Detection of repeated structures in SfM
+Detection of repeated structures in SfM.
+Find further details on https://3dvision2017.github.io/Rep3D/
 
 Getting Started
 ---------------
