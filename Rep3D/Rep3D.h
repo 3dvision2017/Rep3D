@@ -60,13 +60,13 @@ class Rep3D
 		};
 
 
-        struct point3d								//contains the point cloud for fast acces (can be updated with new points using...)
-        {
-            float ID_3D;							//ID of 3D_point (just for colmap read out data)
-            float X;								//X coordinate of 3D point
-            float Y;								//Y coordinate of 3D point
-            float Z;								//Z coordinate of 3D point
-        };
+        	struct point3d								//contains the point cloud for fast acces (can be updated with new points using...)
+        	{
+           	 	float ID_3D;							//ID of 3D_point (just for colmap read out data)
+            		float X;								//X coordinate of 3D point
+            		float Y;								//Y coordinate of 3D point
+            		float Z;								//Z coordinate of 3D point
+        	};
 
 
     /*
@@ -106,13 +106,13 @@ class Rep3D
 		};
 
 
-        struct features								//contains information about the 2D feautures (colmap images.txt)
-        {
-            vector<float> u;						//u coordinate of feauture
-            vector<float> v;						//v coordinate of feauture
-            vector<float> ID_3D;                    //ID of coresponding 3D point in points3D.txt (-1 means there is no matching 3D point)
-            vector<point3d*> point3D;               //vector of pointers to the 3D cloud points
-        };
+        	struct features								//contains information about the 2D feautures (colmap images.txt)
+        	{
+            		vector<float> u;						//u coordinate of feauture
+            		vector<float> v;						//v coordinate of feauture
+            		vector<float> ID_3D;                    //ID of coresponding 3D point in points3D.txt (-1 means there is no matching 3D point)
+            		vector<point3d*> point3D;               //vector of pointers to the 3D cloud points
+        	};
 
 		struct image_data							//contains all essential colmap information for one picture
 		{
