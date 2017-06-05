@@ -145,9 +145,9 @@ class Rep3D
 		void readRepData(string folderLocation);
 
 		void merge(int Cam_ID, float f,float cx, float cy, float k); // 2D info is in member variable
-        void assign3Dpoints(void);
-        plane RANSAC_plane(MatrixXf points);						//fit a plane in 3D for a given set of points
-        pair<Vector3f,pair<float,float>> LGS(float u, float v, plane E,Vector3f* T,Matrix3f* K, Matrix3f* R);		//solve a LGS to find projected 3D point of a 2D rep node point
+        	void assign3Dpoints(void);
+        	plane RANSAC_plane(MatrixXf points);						//fit a plane in 3D for a given set of points
+        	pair<Vector3f,pair<float,float>> LGS(float u, float v, plane E,Vector3f* T,Matrix3f* K, Matrix3f* R);		//solve a LGS to find projected 3D point of a 2D rep node point
 		MatrixXf get_3D_data(void);
 		void get_3D_rep_lines(vector<vector<float> > &startpkt, vector<vector<float> > &endpkt); //searches for all rep lines of the dataset
 		void writeRepLinesToVRML(string filename);
@@ -175,13 +175,13 @@ class Rep3D
 		Rep3D();								//constructor
 		virtual ~Rep3D();						//destructor
 		void read(string fullfilename_colmap_images,string fullfilename_colmap_points3D,string fullfilename_colmap_cameras, string fullFolderName_rep_folder); //reads the essential colmap data into var:"colrep_data"
-        void calc_proj_planes(void);			//calculates the projectionplane for every repetition and saves as member
-        void project_raw_reps(void); 			//Project alls 2D rep dots to coresponding plane E in 3D space
+       	 	void calc_proj_planes(void);			//calculates the projectionplane for every repetition and saves as member
+        	void project_raw_reps(void); 			//Project alls 2D rep dots to coresponding plane E in 3D space
 		void print_VRML(string filename);  		//Prints the VRML File
 		void find_optimal_plane(void);
 		void project_optimal_reps(void);
 		void show_plot(void);
-        void find_optrep();
+        	void find_optrep();
 
 
 
@@ -191,9 +191,9 @@ class Rep3D
                     ID2,X2,Y2,Z2
                     .	.	.	.
      */
-		void writeCloudToCSV(void);
+		void writeCloudToCSV(string filename);
 		void writeRawProjRepsToCSV(string filename);
-		void writeClustersToCSV(void);
+		void writeClustersToCSV(string filename);
 
 
 };
