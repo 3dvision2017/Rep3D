@@ -58,7 +58,7 @@ you are interested in licensing the software for commercial purposes, without
 disclosing your modifications, please contact the authors.
 
     Rep3D
-    Copyright (C) 2017  Pascal Enderli, Lukas Frischcknecht, Timothy Marvel
+    Copyright (C) 2017  Pascal Enderli, Lukas Frischknecht, Timothy Marvel
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
