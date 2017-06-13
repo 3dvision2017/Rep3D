@@ -8,7 +8,7 @@ Find further details on https://3dvision2017.github.io/Rep3D/
 
 Dependencies
 ---------------
-Eigen3, OpenMP, c++11
+Eigen3, OpenMP, C++11
 
 I/O
 ---------------
